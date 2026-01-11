@@ -6,7 +6,7 @@
 /*   By: szaoual <szaoual@1337.ma>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/26 18:19:59 by szaoual           #+#    #+#             */
-/*   Updated: 2025/12/26 18:31:12 by szaoual          ###   ########.fr       */
+/*   Updated: 2025/12/28 20:43:59 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ PhoneBook::PhoneBook() : _index(0), _count(0) {}
 PhoneBook::~PhoneBook() {}
 
 static std::string truncate(std::string str) {
-    if (str.length() > 10)
+    if (str.length(z) > 10)
         return str.substr(0, 9) + ".";
     return str;
 }
