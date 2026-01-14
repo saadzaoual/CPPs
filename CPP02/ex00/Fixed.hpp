@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: szaoual <szaoual@1337.ma>                  +#+  +:+       +#+        */
+/*   By: szaoual <szaoual@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/12 16:49:10 by szaoual           #+#    #+#             */
-/*   Updated: 2026/01/12 17:00:55 by szaoual          ###   ########.fr       */
+/*   Created: 2026/01/14 07:09:03 by szaoual           #+#    #+#             */
+/*   Updated: 2026/01/14 07:13:33 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,14 @@
 class Fixed{
     private:
         int value;
-        static const int frac;
+        static const int frac = 8;
     public:
-        Fixed();
-        Fixed(const Fixed& other);
-        Fixed& operator=(const Fixed& other);
-        int getRawBits( void ) const;
-        void setRawBits( int const raw );
-        ~Fixed();
+    Fixed();
+    Fixed(const Fixed& other);
+    Fixed& operator=(const Fixed& other);
+    ~Fixed();
+    int getRawBits(void) const;
+    void setRawBits(int const raw);
 };
+
 #endif
