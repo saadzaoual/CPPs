@@ -6,7 +6,7 @@
 /*   By: szaoual <szaoual@1337.ma>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 09:18:02 by szaoual           #+#    #+#             */
-/*   Updated: 2026/01/19 13:19:20 by szaoual          ###   ########.fr       */
+/*   Updated: 2026/01/19 14:01:19 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ int main()
     std::cout << "Dog type: " << dog->getType() << std::endl;
     std::cout << "Cat type: " << cat->getType() << std::endl;
 
-    cat->makeSound();   // should call Cat::makeSound()
-    dog->makeSound();   // should call Dog::makeSound()
-    meta->makeSound();  // Animal sound
+    cat->makeSound();
+    dog->makeSound();
+    meta->makeSound();
 
     std::cout << std::endl;
     delete meta;
@@ -46,8 +46,8 @@ int main()
     std::cout << std::endl;
     std::cout << "WrongCat type: " << wrongCat->getType() << std::endl;
 
-    wrongCat->makeSound();     // should call WrongAnimal::makeSound()
-    wrongAnimal->makeSound(); // WrongAnimal sound
+    wrongCat->makeSound();
+    wrongAnimal->makeSound();
 
     std::cout << std::endl;
     delete wrongAnimal;

@@ -6,7 +6,7 @@
 /*   By: szaoual <szaoual@1337.ma>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 09:18:02 by szaoual           #+#    #+#             */
-/*   Updated: 2026/01/19 13:43:14 by szaoual          ###   ########.fr       */
+/*   Updated: 2026/01/19 14:01:18 by szaoual          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ int main()
     const int arraySize = 4;
     Animal* animals[arraySize];
     
-    // Fill half with Dogs, half with Cats
     for (int idx = 0; idx < arraySize / 2; idx++)
     {
         animals[idx] = new Dog();
@@ -63,7 +62,7 @@ int main()
     cat1.getBrain()->setIdea(0, "I love fish");
     cat1.getBrain()->setIdea(1, "I hate dogs");
     
-    Cat cat2 = cat1; // Copy constructor
+    Cat cat2 = cat1;
     
     std::cout << "Cat1 idea 0: " << cat1.getBrain()->getIdea(0) << std::endl;
     std::cout << "Cat2 idea 0: " << cat2.getBrain()->getIdea(0) << std::endl;
